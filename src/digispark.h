@@ -13,6 +13,8 @@
 #define VERIFICATION_CODE_MODULUS (1000*1000) // Six digits
 #define BITS_PER_BASE32_CHAR      5           // Base32 expands space by 8/5
 
-char *generateCode(const char *key, long t);
+
+char *generateCode(const char *secret, uint64_t moving_factor);
+int strlength(const char *string);
 
 #endif /* digispark_h */

@@ -13,7 +13,6 @@
 #define MAX_KEY_LENGTH 21
 
 int main() {
-    //char otp_keys[MAX_OTP][MAX_KEY_LENGTH];
     for (int i = 0; i <= 10; i++) {
         char *c = generateCode("12345678901234567890", i);
         printf("%s\n", c);
